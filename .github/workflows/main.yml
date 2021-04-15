@@ -1,0 +1,11 @@
+name: "Issue assigner"
+
+on: [issues, issue_comment]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: Bugheist/issue-assigner@v2
+      with:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
