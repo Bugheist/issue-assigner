@@ -12,3 +12,7 @@ inputs:
 runs:
   using: 'node12'
   main: 'lib/main.js'
+
+default_permissions:
+  issues: write
+  metadata: read
